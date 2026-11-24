@@ -12,8 +12,8 @@ android {
         applicationId = "com.spiderstudio.amrplayer"
         minSdk = 29
         targetSdk = 34
-        versionCode = 1
-        versionName = "0.0.1"
+        versionCode = 2
+        versionName = "0.1.0"
     }
 
     // مفتاح debug ثابت (مرفوع بالمستودع) حتى تتحدّث النسخ فوق بعضها بدون حذف
@@ -50,5 +50,7 @@ dependencies {
     implementation("androidx.compose.material3:material3")
     implementation("androidx.compose.material:material-icons-core")
     implementation("androidx.activity:activity-compose:1.9.3")
-    // المرحلة 1 (يضيفها من يشتغل عليها): androidx.media3:media3-exoplayer / media3-session بالنسخة 1.4.1
+    implementation("androidx.media3:media3-exoplayer:1.4.1")
+    implementation("androidx.media3:media3-session:1.4.1")
+    implementation("androidx.core:core-ktx:1.15.0")
 }
